@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "quodd:charcoal_briquette"
+    },
+    {
+      "item": "quodd:charcoal_briquette"
+    },
+    {
+      "item": "quodd:charcoal_briquette"
+    },
+    {
+      "item": "quodd:charcoal_briquette"
+    },
+    {
+      "item": "quodd:charcoal_briquette"
+    },
+    {
+      "item": "quodd:charcoal_briquette"
+    },
+    {
+      "item": "quodd:charcoal_briquette"
+    },
+    {
+      "item": "quodd:charcoal_briquette"
+    }
+  ],
+  "result": {
+    "item": "minecraft:charcoal"
+  }
+}

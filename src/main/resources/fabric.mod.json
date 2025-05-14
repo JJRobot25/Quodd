@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "quodd",
+	"version": "${version}",
+	"name": "Quodd",
+	"description": "A mod adding Questionable Oddities :D",
+	"authors": [
+		"JJRobot25"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/quodd/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jjrobot25.Quodd"
+		],
+		"client": [
+			"net.jjrobot25.QuoddClient"
+		],
+		"fabric-datagen": [
+			"net.jjrobot25.QuoddDataGenerator"
+		]
+	},
+	"mixins": [
+		"quodd.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
