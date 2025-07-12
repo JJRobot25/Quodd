@@ -28,6 +28,10 @@ public class QuoddItems {
             .hunger(6)
             .saturationModifier(0.6f)
             .build())));
+    public static final Item BROODJE_GEZOND = register("broodje_gezond", new Item(new FabricItemSettings().food(new FoodComponent.Builder()
+            .hunger(6)
+            .saturationModifier(0.6f)
+            .build())));
 
 
     public static Item basicItem(String name) {

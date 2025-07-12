@@ -1,0 +1,21 @@
+{
+	"display": {
+		"announce_to_chat": false,
+		"icon": {
+			"item": "minecraft:warped_fungus_on_a_stick"
+		},
+		"title": {
+			"translate": "advancement.quodd.based.title"
+		},
+		"description": {
+			"translate": "advancement.quodd.based.desc"
+		},
+		"background": "minecraft:textures/block/raw_copper_block.png"
+	},
+	"criteria": {
+		"based": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {}
+		}
+	}
+}

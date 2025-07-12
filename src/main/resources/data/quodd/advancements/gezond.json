@@ -1,0 +1,28 @@
+{
+	"parent": "quodd:french",
+	"display": {
+		"icon": {
+			"item": "quodd:half_baguette"
+		},
+		"title": {
+			"translate": "advancement.quodd.gezond.title"
+		},
+		"description": {
+			"translate": "advancement.quodd.gezond.desc"
+		}
+	},
+	"criteria": {
+		"gezond": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"quodd:broodje_gezond"
+						]
+					}
+				]
+			}
+		}
+	}
+}

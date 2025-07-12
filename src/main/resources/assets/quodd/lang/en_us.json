@@ -7,5 +7,15 @@
 	"item.quodd.thomas_totem": "Totem of the Ghost",
 	"item.quodd.blade_of_grass": "Blade of Grass",
 	"item.quodd.baguette": "Baguette",
-	"item.quodd.eaten_baguette": "Eaten Baguette"
+	"item.quodd.eaten_baguette": "Eaten Baguette",
+
+
+	"advancement.quodd.based.title": "Quodd",
+	"advancement.quodd.based.desc": "Thanks for downloading my mod!",
+	"advancement.quodd.thomas.title": "Where is Thomas?",
+	"advancement.quodd.thomas.desc": "Obtain a Ghost Totem",
+	"advancement.quodd.french.title": "Pure Pain",
+	"advancement.quodd.french.desc": "Quattre vingt deez nuts",
+	"advancement.quodd.gezond.title": "Broodje Gezond!",
+	"advancement.quodd.gezond.desc": "<REPLACE THIS>"
 }

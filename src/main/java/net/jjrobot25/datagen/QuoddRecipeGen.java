@@ -8,6 +8,9 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 import java.util.function.Consumer;
@@ -26,6 +29,12 @@ public class QuoddRecipeGen extends FabricRecipeProvider {
                 .input(QuoddItems.BAGUETTE)
                 .criterion(hasItem(QuoddItems.BAGUETTE), conditionsFromItem(QuoddItems.BAGUETTE))
                 .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.HALF_BAGUETTE)));
+        
+//        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, conditionsFromItem(QuoddItems.BROODJE_GEZOND))
+//                .input(new TagKey<Item>(TagKey.of(RegistryKeys.ITEM, new Identifier("c", "cheese"))))
+//                .input(QuoddItems.HALF_BAGUETTE)
+//                .criterion(hasItem(QuoddItems.HALF_BAGUETTE), conditionsFromItem(QuoddItems.HALF_BAGUETTE))
+//                .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.HALF_BAGUETTE)));
     }
 
 

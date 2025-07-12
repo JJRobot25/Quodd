@@ -1,0 +1,28 @@
+{
+	"parent": "quodd:based",
+	"display": {
+		"icon": {
+			"item": "quodd:thomas_totem"
+		},
+		"title": {
+			"translate": "advancement.quodd.thomas.title"
+		},
+		"description": {
+			"translate": "advancement.quodd.thomas.desc"
+		}
+	},
+	"criteria": {
+		"thomas": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"quodd:thomas_totem"
+						]
+					}
+				]
+			}
+		}
+	}
+}

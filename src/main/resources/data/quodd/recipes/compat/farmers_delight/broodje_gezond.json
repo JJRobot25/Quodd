@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "food",
+	"ingredients": [
+		{
+			"item": "quodd:half_baguette"
+		},
+		{
+			"item": "farmers_delight:cheese"
+		},
+		{
+			"item": "quodd:coal_briquette"
+		},
+		{
+			"item": "quodd:coal_briquette"
+		},
+		{
+			"item": "quodd:coal_briquette"
+		},
+		{
+			"item": "quodd:coal_briquette"
+		},
+		{
+			"item": "quodd:coal_briquette"
+		},
+		{
+			"item": "quodd:coal_briquette"
+		}
+	],
+	"result": {
+		"item": "quodd:broodje_gezond"
+	}
+}

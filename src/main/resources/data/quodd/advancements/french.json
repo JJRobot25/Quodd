@@ -1,0 +1,28 @@
+{
+	"parent": "quodd:based",
+	"display": {
+		"icon": {
+			"item": "quodd:baguette"
+		},
+		"title": {
+			"translate": "advancement.quodd.french.title"
+		},
+		"description": {
+			"translate": "advancement.quodd.french.desc"
+		}
+	},
+	"criteria": {
+		"french": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"quodd:baguette"
+						]
+					}
+				]
+			}
+		}
+	}
+}

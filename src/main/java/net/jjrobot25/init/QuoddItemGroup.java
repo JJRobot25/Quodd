@@ -23,6 +23,7 @@ public class QuoddItemGroup {
 
                 entries.add(QuoddItems.BAGUETTE);
                 entries.add(QuoddItems.HALF_BAGUETTE);
+                entries.add(QuoddItems.BROODJE_GEZOND);
             }).build());
 
     public static void init() {
