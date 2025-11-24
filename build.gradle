@@ -16,6 +16,21 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+	// Modrinth
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+
+		filter { includeGroup "maven.modrinth" }
+	}
+
+	maven { url = "https://maven.terraformersmc.com/releases" } // Mod Menu, EMI
+	maven { url = "https://maven.shedaniel.me" } // Cloth Config, REI
 }
 
 fabricApi {
@@ -25,6 +40,7 @@ fabricApi {
 }
 
 dependencies {
+	// ============= Default stuff =============
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
@@ -32,7 +48,16 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+
+	// ============= QoL mods =============
+	modLocalRuntime("com.terraformersmc:modmenu:${modmenu_version}")
+
+	switch (recipe_viewer.toLowerCase(Locale.ROOT)) {
+		case "rei": modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}"); break
+		case "emi": modLocalRuntime("dev.emi:emi-fabric:${emi_version}+1.20.1"); break
+		default: println("No recipe viewer enabled.")
+	}
 }
 
 processResources {

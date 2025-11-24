@@ -8,6 +8,7 @@ import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("deprecation")
 public enum QuoddToolMaterials implements ToolMaterial {
     GRASS(MiningLevels.WOOD, 3, 0.0f, 3.0f, 3, () -> Ingredient.ofItems(Items.WHEAT_SEEDS)),
     BREAD(MiningLevels.WOOD, 15, 0.0f, 0.0f, 5, () -> Ingredient.ofItems(Items.BREAD));

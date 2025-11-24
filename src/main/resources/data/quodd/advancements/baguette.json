@@ -5,14 +5,14 @@
 			"item": "quodd:baguette"
 		},
 		"title": {
-			"translate": "advancement.quodd.french.title"
+			"translate": "advancement.quodd.baguette.title"
 		},
 		"description": {
-			"translate": "advancement.quodd.french.desc"
+			"translate": "advancement.quodd.baguette.desc"
 		}
 	},
 	"criteria": {
-		"french": {
+		"baguette": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
