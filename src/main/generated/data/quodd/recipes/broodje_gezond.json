@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:cheese"
+    },
+    {
+      "item": "quodd:half_baguette"
+    }
+  ],
+  "result": {
+    "item": "quodd:broodje_gezond"
+  }
+}
