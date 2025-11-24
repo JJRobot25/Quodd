@@ -30,11 +30,11 @@ public class QuoddRecipeGen extends FabricRecipeProvider {
                 .criterion(hasItem(QuoddItems.BAGUETTE), conditionsFromItem(QuoddItems.BAGUETTE))
                 .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.HALF_BAGUETTE)));
         
-//        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, conditionsFromItem(QuoddItems.BROODJE_GEZOND))
-//                .input(new TagKey<Item>(TagKey.of(RegistryKeys.ITEM, new Identifier("c", "cheese"))))
-//                .input(QuoddItems.HALF_BAGUETTE)
-//                .criterion(hasItem(QuoddItems.HALF_BAGUETTE), conditionsFromItem(QuoddItems.HALF_BAGUETTE))
-//                .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.HALF_BAGUETTE)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, QuoddItems.BROODJE_GEZOND)
+                .input(TagKey.of(RegistryKeys.ITEM, new Identifier("c", "cheese")))
+                .input(QuoddItems.HALF_BAGUETTE)
+                .criterion(hasItem(QuoddItems.HALF_BAGUETTE), conditionsFromItem(QuoddItems.HALF_BAGUETTE))
+                .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.BROODJE_GEZOND)));
     }
 
 
