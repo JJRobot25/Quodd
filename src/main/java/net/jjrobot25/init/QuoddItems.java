@@ -24,18 +24,17 @@ public class QuoddItems {
             .hunger(7)
             .saturationModifier(0.6f)
             .build())));
-    public static final Item HALF_BAGUETTE = register("half_baguette", new Item(new FabricItemSettings().food(new FoodComponent.Builder()
-            .hunger(6)
-            .saturationModifier(0.6f)
-            .build())));
-    public static final Item BROODJE_GEZOND = register("broodje_gezond", new Item(new FabricItemSettings().food(new FoodComponent.Builder()
-            .hunger(6)
-            .saturationModifier(0.6f)
-            .build())));
+    public static final Item HALF_BAGUETTE = basicFood("half_baguette", 6, 0.6f);
+    public static final Item BROODJE_GEZOND = basicFood("broodje_gezond", 6, 0.6f);
 
+    public static final Item SAUSAGE = basicFood("sausage", 4, .3f);
 
     public static Item basicItem(String name) {
         return register(name, new Item(new FabricItemSettings()));
+    }
+
+    public static Item basicFood(String name, int hunger, float saturation) {
+        return register(name, new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).build())));
     }
 
     public static Item register(String name, Item item) {

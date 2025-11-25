@@ -28,5 +28,7 @@ public class QuoddModelGen extends FabricModelProvider {
         itemModelGenerator.register(QuoddItems.BAGUETTE, Models.GENERATED);
         itemModelGenerator.register(QuoddItems.HALF_BAGUETTE, Models.GENERATED);
         itemModelGenerator.register(QuoddItems.BROODJE_GEZOND, Models.GENERATED);
+
+        itemModelGenerator.register(QuoddItems.SAUSAGE, Models.GENERATED);
     }
 }
