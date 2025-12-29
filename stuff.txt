@@ -1,4 +1,6 @@
 Stuff to add:
-[ ] berry mix
-[ ] bone club
-[ ] hot dog (neep version)
+- bone club
+- le CHEESE
+- tomato?
+- hot dog texture & recipe
+- crown?

@@ -20,11 +20,15 @@ public class QuoddItemGroup {
 
                 entries.add(QuoddItems.THOMAS_TOTEM);
                 entries.add(QuoddItems.BLADE_OF_GRASS);
+                entries.add(QuoddItems.BERRY_BOWL);
 
+                entries.add(QuoddItems.CHEESE);
                 entries.add(QuoddItems.BAGUETTE);
                 entries.add(QuoddItems.HALF_BAGUETTE);
                 entries.add(QuoddItems.BROODJE_GEZOND);
+
                 entries.add(QuoddItems.SAUSAGE);
+                entries.add(QuoddItems.HOTDOG);
             }).build());
 
     public static void init() {

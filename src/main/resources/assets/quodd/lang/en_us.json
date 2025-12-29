@@ -6,8 +6,13 @@
 
 	"item.quodd.thomas_totem": "Totem of the Ghost",
 	"item.quodd.blade_of_grass": "Blade of Grass",
+	"item.quodd.berry_bowl": "Berry Bowl",
 	"item.quodd.baguette": "Baguette",
-	"item.quodd.eaten_baguette": "Eaten Baguette",
+	"item.quodd.half_baguette": "Half Baguette",
+	"item.quodd.cheese": "Cheese",
+	"item.quodd.broodje_gezond": "Broodje Gezond",
+	"item.quodd.suspicious_sausage": "Suspicious Sausage",
+	"item.quodd.hotdog": "Whisper Bread with Suspicious Sausage",
 
 
 	"advancement.quodd.based.title": "Quodd",

@@ -39,6 +39,7 @@ replay_*.log
 *.hprof
 *.jfr
 
-# generated stuff
+# stuff
 
 src/main/generated/.cache/
+libs/

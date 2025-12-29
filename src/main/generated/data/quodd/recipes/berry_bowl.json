@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "b": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "pattern": [
+    "bbb",
+    "bbb",
+    " B "
+  ],
+  "result": {
+    "item": "quodd:berry_bowl"
+  },
+  "show_notification": true
+}

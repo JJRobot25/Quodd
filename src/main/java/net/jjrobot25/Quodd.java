@@ -3,6 +3,7 @@ package net.jjrobot25;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.jjrobot25.init.QuoddBlocks;
 import net.jjrobot25.init.QuoddItemGroup;
 import net.jjrobot25.init.QuoddItems;
 import org.slf4j.Logger;
@@ -25,6 +26,7 @@ public class Quodd implements ModInitializer {
 		LOGGER.info("Well hello there from Quodd!");
 
 		QuoddItems.init();
+		QuoddBlocks.init();
 
 		QuoddItemGroup.init();
 
