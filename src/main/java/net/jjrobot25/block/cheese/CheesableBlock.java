@@ -7,6 +7,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 
+// Copy of `OxidizableBlock`
 public class CheesableBlock extends Block implements Cheesable {
     private final Cheesable.CheeseLevel cheeseLevel;
 

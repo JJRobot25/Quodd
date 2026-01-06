@@ -29,6 +29,11 @@ public class QuoddItemGroup {
 
                 entries.add(QuoddItems.SAUSAGE);
                 entries.add(QuoddItems.HOTDOG);
+
+                entries.add(QuoddBlocks.FRESH_CHEESE_BLOCK);
+                entries.add(QuoddBlocks.YOUNG_CHEESE_BLOCK);
+                entries.add(QuoddBlocks.MATURE_CHEESE_BLOCK);
+                entries.add(QuoddBlocks.OLD_CHEESE_BLOCK);
             }).build());
 
     public static void init() {

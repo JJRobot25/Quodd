@@ -3,26 +3,19 @@ package net.jjrobot25.block.cheese;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableBiMap;
+import net.jjrobot25.init.QuoddBlocks;
 import net.minecraft.block.*;
 
 import java.util.Optional;
 import java.util.function.Supplier;
 
+// Copy of `Oxidizable`
 public interface Cheesable extends Degradable<Cheesable.CheeseLevel> {
     Supplier<BiMap<Block, Block>> CHEESE_LEVEL_INCREASES = Suppliers.memoize(
             () -> ImmutableBiMap.<Block, Block>builder()
-                    .put(Blocks.COPPER_BLOCK, Blocks.EXPOSED_COPPER)
-                    .put(Blocks.EXPOSED_COPPER, Blocks.WEATHERED_COPPER)
-                    .put(Blocks.WEATHERED_COPPER, Blocks.OXIDIZED_COPPER)
-                    .put(Blocks.CUT_COPPER, Blocks.EXPOSED_CUT_COPPER)
-                    .put(Blocks.EXPOSED_CUT_COPPER, Blocks.WEATHERED_CUT_COPPER)
-                    .put(Blocks.WEATHERED_CUT_COPPER, Blocks.OXIDIZED_CUT_COPPER)
-                    .put(Blocks.CUT_COPPER_SLAB, Blocks.EXPOSED_CUT_COPPER_SLAB)
-                    .put(Blocks.EXPOSED_CUT_COPPER_SLAB, Blocks.WEATHERED_CUT_COPPER_SLAB)
-                    .put(Blocks.WEATHERED_CUT_COPPER_SLAB, Blocks.OXIDIZED_CUT_COPPER_SLAB)
-                    .put(Blocks.CUT_COPPER_STAIRS, Blocks.EXPOSED_CUT_COPPER_STAIRS)
-                    .put(Blocks.EXPOSED_CUT_COPPER_STAIRS, Blocks.WEATHERED_CUT_COPPER_STAIRS)
-                    .put(Blocks.WEATHERED_CUT_COPPER_STAIRS, Blocks.OXIDIZED_CUT_COPPER_STAIRS)
+                    .put(QuoddBlocks.FRESH_CHEESE_BLOCK, QuoddBlocks.YOUNG_CHEESE_BLOCK)
+                    .put(QuoddBlocks.YOUNG_CHEESE_BLOCK, QuoddBlocks.MATURE_CHEESE_BLOCK)
+                    .put(QuoddBlocks.MATURE_CHEESE_BLOCK, QuoddBlocks.OLD_CHEESE_BLOCK)
                     .build()
     );
     Supplier<BiMap<Block, Block>> CHEESE_LEVEL_DECREASES = Suppliers.memoize(() -> ((BiMap) CHEESE_LEVEL_INCREASES.get()).inverse());
@@ -63,9 +56,8 @@ public interface Cheesable extends Degradable<Cheesable.CheeseLevel> {
 
     @Override
     default float getDegradationChanceMultiplier() {
-        return this.getDegradationLevel() == CheeseLevel.FRESH ? 0.75F : 1.0F;
+        return this.getDegradationLevel() == CheeseLevel.FRESH ? 1.0F : 0.75F;
     }
-
 
 
     public static enum CheeseLevel {

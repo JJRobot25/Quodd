@@ -14,6 +14,10 @@
 	"item.quodd.suspicious_sausage": "Suspicious Sausage",
 	"item.quodd.hotdog": "Whisper Bread with Suspicious Sausage",
 
+	"block.quodd.fresh_cheese_block": "Fresh Cheese Block",
+	"block.quodd.young_cheese_block": "Young Cheese Block",
+	"block.quodd.mature_cheese_block": "Mature Cheese Block",
+	"block.quodd.old_cheese_block": "Old Cheese Block",
 
 	"advancement.quodd.based.title": "Quodd",
 	"advancement.quodd.based.desc": "Thanks for downloading my mod!",

@@ -2,6 +2,7 @@ package net.jjrobot25.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.jjrobot25.init.QuoddBlocks;
 import net.jjrobot25.init.QuoddItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -14,7 +15,11 @@ public class QuoddModelGen extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(QuoddBlocks.TEST_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(QuoddBlocks.FRESH_CHEESE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(QuoddBlocks.YOUNG_CHEESE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(QuoddBlocks.MATURE_CHEESE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(QuoddBlocks.OLD_CHEESE_BLOCK);
     }
 
     @Override
