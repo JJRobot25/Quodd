@@ -23,7 +23,7 @@ public class Quodd implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Well hello there from Quodd!");
+		LOGGER.info("Hello there from Quodd!");
 
 		QuoddItems.init();
 		QuoddBlocks.init();

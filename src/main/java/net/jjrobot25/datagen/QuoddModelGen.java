@@ -38,5 +38,7 @@ public class QuoddModelGen extends FabricModelProvider {
 
         itemModelGenerator.register(QuoddItems.SAUSAGE, Models.GENERATED);
         itemModelGenerator.register(QuoddItems.HOTDOG, Models.GENERATED);
+
+        itemModelGenerator.register(QuoddItems.GOAT_MILK_BUCKET, Models.GENERATED);
     }
 }

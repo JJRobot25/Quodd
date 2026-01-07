@@ -1,6 +1,8 @@
 Stuff to add:
 - bone club
 - le CHEESE
+  - (virtual) fluid for recipes https://codeberg.org/MeatWheeze/NeepMeat/src/branch/1.20/dev/src/main/java/com/neep/neepmeat/init/NMFluids.java
+  - moss/mold on old cheese?
 - tomato?
 - hot dog texture & recipe
 - crown?

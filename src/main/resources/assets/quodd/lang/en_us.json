@@ -3,7 +3,6 @@
 
 	"item.quodd.coal_briquette": "Coal Briquette",
 	"item.quodd.charcoal_briquette": "Charcoal Briquette",
-
 	"item.quodd.thomas_totem": "Totem of the Ghost",
 	"item.quodd.blade_of_grass": "Blade of Grass",
 	"item.quodd.berry_bowl": "Berry Bowl",
@@ -13,6 +12,7 @@
 	"item.quodd.broodje_gezond": "Broodje Gezond",
 	"item.quodd.suspicious_sausage": "Suspicious Sausage",
 	"item.quodd.hotdog": "Whisper Bread with Suspicious Sausage",
+	"item.quodd.goat_milk_bucket": "Goat Milk Bucket",
 
 	"block.quodd.fresh_cheese_block": "Fresh Cheese Block",
 	"block.quodd.young_cheese_block": "Young Cheese Block",

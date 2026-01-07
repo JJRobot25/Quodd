@@ -3,7 +3,8 @@
 	"package": "net.jjrobot25.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"GoatEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

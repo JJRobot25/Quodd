@@ -5,10 +5,7 @@ import net.jjrobot25.Quodd;
 import net.jjrobot25.item.BaguetteItem;
 import net.jjrobot25.item.QuoddToolMaterials;
 import net.jjrobot25.item.ThomasTotemItem;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.StewItem;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -33,6 +30,8 @@ public class QuoddItems {
     public static final Item SAUSAGE = basicFood("suspicious_sausage", 4, 0.3f);
     public static final Item HOTDOG = basicFood("hotdog", 6, 0.5f);
 
+    // TODO: virtual fluid?
+    public static final Item GOAT_MILK_BUCKET = register("goat_milk_bucket", new MilkBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
 
     public static Item basicItem(String name) {
