@@ -31,13 +31,17 @@ public class QuoddModelGen extends FabricModelProvider {
         itemModelGenerator.register(QuoddItems.BLADE_OF_GRASS, Models.GENERATED);
         itemModelGenerator.register(QuoddItems.BERRY_BOWL, Models.GENERATED);
 
-        itemModelGenerator.register(QuoddItems.CHEESE, Models.GENERATED);
         itemModelGenerator.register(QuoddItems.BAGUETTE, Models.GENERATED);
         itemModelGenerator.register(QuoddItems.HALF_BAGUETTE, Models.GENERATED);
         itemModelGenerator.register(QuoddItems.BROODJE_GEZOND, Models.GENERATED);
 
         itemModelGenerator.register(QuoddItems.SAUSAGE, Models.GENERATED);
         itemModelGenerator.register(QuoddItems.HOTDOG, Models.GENERATED);
+
+        itemModelGenerator.register(QuoddItems.YOUNG_CHEESE, Models.GENERATED);
+        itemModelGenerator.register(QuoddItems.MATURE_CHEESE, Models.GENERATED);
+        itemModelGenerator.register(QuoddItems.OLD_CHEESE, Models.GENERATED);
+
 
         itemModelGenerator.register(QuoddItems.GOAT_MILK_BUCKET, Models.GENERATED);
     }

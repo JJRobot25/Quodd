@@ -2,6 +2,7 @@ package net.jjrobot25.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.jjrobot25.init.QuoddBlocks;
 import net.jjrobot25.init.QuoddItems;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -45,7 +46,7 @@ public class QuoddRecipeGen extends FabricRecipeProvider {
 //                .criterion(hasItem(Items.BONE), conditionsFromItem(Items.BONE))
 //                .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.BONE_CLUB)));
 
-        offerSmelting(consumer, List.of(Items.MILK_BUCKET), RecipeCategory.FOOD, QuoddItems.CHEESE, 0.1f, 200, "cheese");
+        offerSmelting(consumer, List.of(Items.MILK_BUCKET), RecipeCategory.FOOD, QuoddBlocks.FRESH_CHEESE_BLOCK, 0.1f, 200, "cheese");
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, QuoddItems.BAGUETTE)
                 .pattern("  B")
                 .pattern(" B ")
@@ -63,6 +64,10 @@ public class QuoddRecipeGen extends FabricRecipeProvider {
                 .input(Items.EGG)
                 .criterion(hasItem(QuoddItems.HALF_BAGUETTE), conditionsFromItem(QuoddItems.HALF_BAGUETTE))
                 .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.BROODJE_GEZOND)));
+
+        offerReversibleCompactingRecipes(consumer, RecipeCategory.FOOD, QuoddItems.YOUNG_CHEESE, RecipeCategory.BUILDING_BLOCKS, QuoddBlocks.YOUNG_CHEESE_BLOCK);
+        offerReversibleCompactingRecipes(consumer, RecipeCategory.FOOD, QuoddItems.MATURE_CHEESE, RecipeCategory.BUILDING_BLOCKS, QuoddBlocks.MATURE_CHEESE_BLOCK);
+        offerReversibleCompactingRecipes(consumer, RecipeCategory.FOOD, QuoddItems.OLD_CHEESE, RecipeCategory.BUILDING_BLOCKS, QuoddBlocks.OLD_CHEESE_BLOCK);
     }
 
 

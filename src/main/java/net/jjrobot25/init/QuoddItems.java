@@ -20,7 +20,6 @@ public class QuoddItems {
     public static final Item BERRY_BOWL = bowlFood("berry_bowl", 6, 0.5f);
     //TODO: bone club
 
-    public static final Item CHEESE = basicFood("cheese", 2, 0.5f);
     public static final Item BAGUETTE = register("baguette", new BaguetteItem(QuoddToolMaterials.BREAD, 3, -2.4F, new FabricItemSettings().food(new FoodComponent.Builder()
             .hunger(7).saturationModifier(0.6f).build())));
     public static final Item HALF_BAGUETTE = basicFood("half_baguette", 7, 0.6f);
@@ -29,6 +28,11 @@ public class QuoddItems {
     // Base: casing (intestines/synthetic eg collagen/cellulose), inject meat, combine spices
     public static final Item SAUSAGE = basicFood("suspicious_sausage", 4, 0.3f);
     public static final Item HOTDOG = basicFood("hotdog", 6, 0.5f);
+
+    public static final Item YOUNG_CHEESE = basicFood("young_cheese", 2, 0.5f);
+    public static final Item MATURE_CHEESE = basicFood("mature_cheese", 2, 0.5f);
+    public static final Item OLD_CHEESE = basicFood("old_cheese", 2, 0.5f);
+
 
     // TODO: virtual fluid?
     public static final Item GOAT_MILK_BUCKET = register("goat_milk_bucket", new MilkBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));

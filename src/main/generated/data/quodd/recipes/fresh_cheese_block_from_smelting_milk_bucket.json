@@ -1,11 +1,11 @@
 {
   "type": "minecraft:smelting",
-  "category": "food",
+  "category": "blocks",
   "cookingtime": 200,
   "experience": 0.1,
   "group": "cheese",
   "ingredient": {
     "item": "minecraft:milk_bucket"
   },
-  "result": "quodd:cheese"
+  "result": "quodd:fresh_cheese_block"
 }

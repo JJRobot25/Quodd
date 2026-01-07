@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:young_cheese_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_young_cheese": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "quodd:young_cheese"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_young_cheese",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:young_cheese_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

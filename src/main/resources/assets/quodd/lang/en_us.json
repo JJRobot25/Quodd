@@ -8,16 +8,20 @@
 	"item.quodd.berry_bowl": "Berry Bowl",
 	"item.quodd.baguette": "Baguette",
 	"item.quodd.half_baguette": "Half Baguette",
-	"item.quodd.cheese": "Cheese",
 	"item.quodd.broodje_gezond": "Broodje Gezond",
 	"item.quodd.suspicious_sausage": "Suspicious Sausage",
 	"item.quodd.hotdog": "Whisper Bread with Suspicious Sausage",
+	"item.quodd.young_cheese": "Young Cheese",
+	"item.quodd.mature_cheese": "Mature Cheese",
+	"item.quodd.old_cheese": "Old Cheese",
 	"item.quodd.goat_milk_bucket": "Goat Milk Bucket",
 
 	"block.quodd.fresh_cheese_block": "Fresh Cheese Block",
 	"block.quodd.young_cheese_block": "Young Cheese Block",
 	"block.quodd.mature_cheese_block": "Mature Cheese Block",
 	"block.quodd.old_cheese_block": "Old Cheese Block",
+
+	"tooltip.quodd.fresh_cheese": "Must be aged",
 
 	"advancement.quodd.based.title": "Quodd",
 	"advancement.quodd.based.desc": "Thanks for downloading my mod!",

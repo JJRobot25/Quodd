@@ -22,7 +22,6 @@ public class QuoddItemGroup {
                 entries.add(QuoddItems.BLADE_OF_GRASS);
                 entries.add(QuoddItems.BERRY_BOWL);
 
-                entries.add(QuoddItems.CHEESE);
                 entries.add(QuoddItems.BAGUETTE);
                 entries.add(QuoddItems.HALF_BAGUETTE);
                 entries.add(QuoddItems.BROODJE_GEZOND);
@@ -34,6 +33,9 @@ public class QuoddItemGroup {
                 entries.add(QuoddBlocks.YOUNG_CHEESE_BLOCK);
                 entries.add(QuoddBlocks.MATURE_CHEESE_BLOCK);
                 entries.add(QuoddBlocks.OLD_CHEESE_BLOCK);
+                entries.add(QuoddItems.YOUNG_CHEESE);
+                entries.add(QuoddItems.MATURE_CHEESE);
+                entries.add(QuoddItems.OLD_CHEESE);
 
                 entries.add(QuoddItems.GOAT_MILK_BUCKET);
             }).build());

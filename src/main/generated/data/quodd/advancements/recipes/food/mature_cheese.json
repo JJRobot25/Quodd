@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_milk_bucket": {
+    "has_mature_cheese_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:milk_bucket"
+              "quodd:mature_cheese_block"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cheese_from_smelting_milk_bucket"
+        "recipe": "minecraft:mature_cheese"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_milk_bucket",
+      "has_mature_cheese_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cheese_from_smelting_milk_bucket"
+      "minecraft:mature_cheese"
     ]
   },
   "sends_telemetry_event": false

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jjrobot25.Quodd;
 import net.jjrobot25.block.cheese.Cheesable;
 import net.jjrobot25.block.cheese.CheesableBlock;
+import net.jjrobot25.block.cheese.FreshCheesableBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -18,7 +19,7 @@ public class QuoddBlocks {
 
     public static final Block FRESH_CHEESE_BLOCK = registerBlock(
             "fresh_cheese_block",
-            new CheesableBlock(
+            new FreshCheesableBlock(
                     Cheesable.CheeseLevel.FRESH, //like slimeblock
                     AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).strength(1.0F, 2.0F).sounds(BlockSoundGroup.SLIME)
             )
