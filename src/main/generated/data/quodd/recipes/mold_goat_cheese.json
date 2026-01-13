@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "quodd:mold_goat_cheese_slab"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "quodd:mold_goat_cheese"
+  }
+}

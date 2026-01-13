@@ -3,9 +3,7 @@ package net.jjrobot25.init;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jjrobot25.Quodd;
-import net.jjrobot25.block.cheese.Cheesable;
-import net.jjrobot25.block.cheese.CheesableBlock;
-import net.jjrobot25.block.cheese.FreshCheesableBlock;
+import net.jjrobot25.block.cheese.*;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -43,6 +41,28 @@ public class QuoddBlocks {
             new CheesableBlock(
                     Cheesable.CheeseLevel.OLD,
                     AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).strength(4.0F, 3.0F).sounds(BlockSoundGroup.WOOD)
+            )
+    );
+
+    public static final Block FRESH_GOAT_CHEESE_SLAB = registerBlock(
+            "fresh_goat_cheese_slab",
+            new FreshCheesableSlabBlock(
+                    Cheesable.CheeseLevel.FRESH,
+                    FabricBlockSettings.copyOf(FRESH_CHEESE_BLOCK)
+            )
+    );
+    public static final Block GOAT_CHEESE_SLAB = registerBlock(
+            "goat_cheese_slab",
+            new CheesableSlabBlock(
+                    Cheesable.CheeseLevel.YOUNG,
+                    FabricBlockSettings.copyOf(FRESH_CHEESE_BLOCK)
+            )
+    );
+    public static final Block MOLD_GOAT_CHEESE_SLAB = registerBlock(
+            "mold_goat_cheese_slab",
+            new CheesableSlabBlock(
+                    Cheesable.CheeseLevel.MATURE,
+                    FabricBlockSettings.copyOf(FRESH_CHEESE_BLOCK)
             )
     );
 

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "goat_cheese",
+  "ingredient": {
+    "item": "quodd:goat_milk_bucket"
+  },
+  "result": "quodd:fresh_goat_cheese_slab"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "quodd:block/mold_goat_cheese_slab",
+    "side": "quodd:block/mold_goat_cheese_slab_side",
+    "top": "quodd:block/mold_goat_cheese_slab"
+  }
+}

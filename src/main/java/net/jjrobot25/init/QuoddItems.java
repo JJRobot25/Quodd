@@ -32,6 +32,8 @@ public class QuoddItems {
     public static final Item YOUNG_CHEESE = basicFood("young_cheese", 2, 0.5f);
     public static final Item MATURE_CHEESE = basicFood("mature_cheese", 2, 0.5f);
     public static final Item OLD_CHEESE = basicFood("old_cheese", 2, 0.5f);
+    public static final Item GOAT_CHEESE = basicFood("goat_cheese", 2, 0.5f);
+    public static final Item MOLD_GOAT_CHEESE = basicFood("mold_goat_cheese", 2, 0.5f);
 
 
     // TODO: virtual fluid?

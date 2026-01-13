@@ -16,6 +16,8 @@ public interface Cheesable extends Degradable<Cheesable.CheeseLevel> {
                     .put(QuoddBlocks.FRESH_CHEESE_BLOCK, QuoddBlocks.YOUNG_CHEESE_BLOCK)
                     .put(QuoddBlocks.YOUNG_CHEESE_BLOCK, QuoddBlocks.MATURE_CHEESE_BLOCK)
                     .put(QuoddBlocks.MATURE_CHEESE_BLOCK, QuoddBlocks.OLD_CHEESE_BLOCK)
+                    .put(QuoddBlocks.FRESH_GOAT_CHEESE_SLAB, QuoddBlocks.GOAT_CHEESE_SLAB)
+                    .put(QuoddBlocks.GOAT_CHEESE_SLAB, QuoddBlocks.MOLD_GOAT_CHEESE_SLAB)
                     .build()
     );
     Supplier<BiMap<Block, Block>> CHEESE_LEVEL_DECREASES = Suppliers.memoize(() -> ((BiMap) CHEESE_LEVEL_INCREASES.get()).inverse());

@@ -37,6 +37,12 @@ public class QuoddItemGroup {
                 entries.add(QuoddItems.MATURE_CHEESE);
                 entries.add(QuoddItems.OLD_CHEESE);
 
+                entries.add(QuoddBlocks.FRESH_GOAT_CHEESE_SLAB);
+                entries.add(QuoddBlocks.GOAT_CHEESE_SLAB);
+                entries.add(QuoddBlocks.MOLD_GOAT_CHEESE_SLAB);
+                entries.add(QuoddItems.GOAT_CHEESE);
+                entries.add(QuoddItems.MOLD_GOAT_CHEESE);
+
                 entries.add(QuoddItems.GOAT_MILK_BUCKET);
             }).build());
 

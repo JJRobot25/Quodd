@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "quodd:block/mold_goat_cheese_slab"
+    },
+    "type=double": {
+      "model": "quodd:block/mold_goat_cheese_slab_double"
+    },
+    "type=top": {
+      "model": "quodd:block/mold_goat_cheese_slab_top"
+    }
+  }
+}

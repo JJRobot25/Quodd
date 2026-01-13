@@ -46,7 +46,6 @@ public class QuoddRecipeGen extends FabricRecipeProvider {
 //                .criterion(hasItem(Items.BONE), conditionsFromItem(Items.BONE))
 //                .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.BONE_CLUB)));
 
-        offerSmelting(consumer, List.of(Items.MILK_BUCKET), RecipeCategory.FOOD, QuoddBlocks.FRESH_CHEESE_BLOCK, 0.1f, 200, "cheese");
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, QuoddItems.BAGUETTE)
                 .pattern("  B")
                 .pattern(" B ")
@@ -65,9 +64,14 @@ public class QuoddRecipeGen extends FabricRecipeProvider {
                 .criterion(hasItem(QuoddItems.HALF_BAGUETTE), conditionsFromItem(QuoddItems.HALF_BAGUETTE))
                 .offerTo(consumer, new Identifier(getRecipeName(QuoddItems.BROODJE_GEZOND)));
 
+        offerSmelting(consumer, List.of(Items.MILK_BUCKET), RecipeCategory.FOOD, QuoddBlocks.FRESH_CHEESE_BLOCK, 0.1f, 200, "cheese");
         offerReversibleCompactingRecipes(consumer, RecipeCategory.FOOD, QuoddItems.YOUNG_CHEESE, RecipeCategory.BUILDING_BLOCKS, QuoddBlocks.YOUNG_CHEESE_BLOCK);
         offerReversibleCompactingRecipes(consumer, RecipeCategory.FOOD, QuoddItems.MATURE_CHEESE, RecipeCategory.BUILDING_BLOCKS, QuoddBlocks.MATURE_CHEESE_BLOCK);
         offerReversibleCompactingRecipes(consumer, RecipeCategory.FOOD, QuoddItems.OLD_CHEESE, RecipeCategory.BUILDING_BLOCKS, QuoddBlocks.OLD_CHEESE_BLOCK);
+
+        offerSmelting(consumer, List.of(QuoddItems.GOAT_MILK_BUCKET), RecipeCategory.FOOD, QuoddBlocks.FRESH_GOAT_CHEESE_SLAB, 0.1f, 200, "goat_cheese");
+        offerReversibleCompactingRecipes(consumer, RecipeCategory.FOOD, QuoddItems.GOAT_CHEESE, RecipeCategory.BUILDING_BLOCKS, QuoddBlocks.GOAT_CHEESE_SLAB);
+        offerReversibleCompactingRecipes(consumer, RecipeCategory.FOOD, QuoddItems.MOLD_GOAT_CHEESE, RecipeCategory.BUILDING_BLOCKS, QuoddBlocks.MOLD_GOAT_CHEESE_SLAB);
     }
 
 

@@ -14,12 +14,17 @@
 	"item.quodd.young_cheese": "Young Cheese",
 	"item.quodd.mature_cheese": "Mature Cheese",
 	"item.quodd.old_cheese": "Old Cheese",
+	"item.quodd.goat_cheese": "Goat Cheese",
+	"item.quodd.mold_goat_cheese": "Blue Goat Cheese",
 	"item.quodd.goat_milk_bucket": "Goat Milk Bucket",
 
 	"block.quodd.fresh_cheese_block": "Fresh Cheese Block",
 	"block.quodd.young_cheese_block": "Young Cheese Block",
 	"block.quodd.mature_cheese_block": "Mature Cheese Block",
 	"block.quodd.old_cheese_block": "Old Cheese Block",
+	"block.quodd.fresh_goat_cheese_slab": "Fresh Goat Cheese Block",
+	"block.quodd.goat_cheese_slab": "Goat Cheese Block",
+	"block.quodd.mold_goat_cheese_slab": "Blue Goat Cheese Block",
 
 	"tooltip.quodd.fresh_cheese": "Must be aged",
 

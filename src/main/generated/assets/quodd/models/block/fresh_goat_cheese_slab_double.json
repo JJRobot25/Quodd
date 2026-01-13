@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "quodd:block/fresh_goat_cheese_slab",
+    "side": "quodd:block/fresh_goat_cheese_slab_side"
+  }
+}
